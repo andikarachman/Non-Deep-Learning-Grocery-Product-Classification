@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+add_definitions(-std=c++17)
+
+set(CXX_FLAGS "-Wall")
+set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
+
+project(camera_fusion)
+
+# Put the directory of the build file of your OpenCV here
+# In my case, I put it in "/Users/andikarachman/libs/opencv/build/"
+find_package(OpenCV 4.3 REQUIRED PATHS "/Users/andikarachman/libs/opencv/build/")
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+link_directories(${OpenCV_LIBRARY_DIRS})
+add_definitions(${OpenCV_DEFINITIONS})
+
+# Executable
+add_executable (product_classification src/matching2D.cpp src/main.cpp)
+target_link_libraries (product_classification ${OpenCV_LIBRARIES})
