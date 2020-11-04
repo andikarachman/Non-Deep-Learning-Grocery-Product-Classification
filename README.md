@@ -1,6 +1,6 @@
 # Non-Deep Learning Grocery Product Classification
 
-This software uses OpenCV's feature detection and description to perform classification of grocery products. To use this, you first need to extract and describe keypoints using [this repo](https://github.com/andikarachman/Keypoints-Extraction-for-Grocery-Product-Classification). Please see the demo of the software below.  
+This software uses OpenCV's feature detection and description to perform classification of grocery products. To use this, you first need to extract and describe keypoints using [this repo](https://github.com/andikarachman/Keypoints-Extraction-for-Grocery-Product-Classification). Please see the demo of the software in the `demo.mp4` file.  
 
 <div style="text-align:center; margin:20px" >
   <video width="640" height="480" controls>
