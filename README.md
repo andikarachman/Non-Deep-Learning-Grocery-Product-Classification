@@ -31,3 +31,6 @@ This software uses OpenCV's feature detection and description to perform classif
 5. Make a build directory in the top level directory: `mkdir build && cd build`
 6. Compile: `cmake .. && make`
 7. Run it: `./product_classification`.
+
+## Video Demo
+[Video Demo](./demo.mp4)
